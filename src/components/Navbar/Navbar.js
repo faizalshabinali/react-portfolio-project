@@ -1,42 +1,72 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-dark bg-dark px-5'>
-      <a className='navbar-brand' href='#'>
-        Faizal Ali
-      </a>
-      <button
-        className='navbar-toggler'
-        type='button'
-        data-toggle='collapse'
-        data-target='#navbarNav'
-        aria-controls='navbarNav'
-        aria-expanded='false'
-        aria-label='Toggle navigation'
-      >
-        <span className='navbar-toggler-icon'></span>
-      </button>
-      <div className='collapse navbar-collapse ' id='navbarNav'>
-        <ul className='navbar-nav ms-auto'>
-          <li className='nav-item active'>
-            <a className='nav-link' href='#'>
-              Home
+    <header className='header-area bg-dark'>
+      <div className='container'>
+        <nav className='navbar navbar-expand-lg navbar-dark '>
+          <div className='container-fluid'>
+            <a className='navbar-brand p-3' href='#'>
+              FAIZAL ALI
             </a>
-          </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              Features
-            </a>
-          </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              Pricing
-            </a>
-          </li>
-        </ul>
+            <button
+              className='navbar-toggler'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#navbarNav'
+              aria-controls='navbarNav'
+              aria-expanded='false'
+              aria-label='Toggle navigation'
+            >
+              <FontAwesomeIcon
+                icon={faBars}
+                style={{ color: '#fff' }}
+                className='navbar-toggler-icon'
+              />
+            </button>
+            <div
+              className='collapse navbar-collapse container-fluid'
+              id='navbarNav'
+            >
+              <ul className='navbar-nav ms-auto'>
+                <li className='nav-item'>
+                  <a className='nav-link active' aria-current='page' href='#'>
+                    Home
+                  </a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>
+                    about me
+                  </a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>
+                    services
+                  </a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>
+                    how work
+                  </a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>
+                    portfolio
+                  </a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>
+                    contacts
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 };
 

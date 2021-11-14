@@ -2,21 +2,40 @@
 
 :root {
   --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-black: rgba(225, 255, 255, 0);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 nav a.nav-link {
-  font-weight: 500;
-  lisne-spacing: 0.0375rem;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  letter-spacing: 0.0375rem;
   cursor: pointer;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.0375rem;
 }
 
 nav ul li {
   text-transform: uppercase;
 }
 
-navbar-nav > li > a {
-  color: var(--primary-white);
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-black);
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
 }
